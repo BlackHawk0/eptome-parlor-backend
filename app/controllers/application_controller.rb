@@ -52,4 +52,37 @@ class ApplicationController < Sinatra::Base
     result = Service.where(service_type_id: service_type.id).to_json
   end
 
+  # get reviews
+  get '/reviews' do
+    Review.all.to_json
+  end
+
+  # get specific review
+  get '/reviews/:id' do
+    review = Review.find(params[:id])
+
+    { review: review, service: review.service }.to_json
+  end
+
+  # create a review
+  post '/reviews/new' do
+    review = Review.new(params)
+
+    if review.save
+      { message: "Review successfully created", review: review }.to_json
+    else
+      { message: "Review not created", errors: review.errors.full_messages }.to_json
+    end
+  end
+
+  # create a booking
+  post '/bookings/new' do
+    booking = Booking.new(params)
+
+    if booking.save
+      { message: "Booking successfully created", booking: booking }.to_json
+    else
+      { message: "Booking not created", errors: booking.errors.full_messages }.to_json
+    end
+  end
 end
