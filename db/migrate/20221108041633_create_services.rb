@@ -4,5 +4,6 @@ class CreateServices < ActiveRecord::Migration[6.1]
       t.string :service_name
       t.string :service_description
       t.integer :service_type_id
+    end
   end
 end

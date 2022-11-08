@@ -7,5 +7,6 @@ class CreateServiceBookings < ActiveRecord::Migration[6.1]
       t.datetime :booked_date
       t.integer :service_id
       t.timestamps
+    end
   end
 end
