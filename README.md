@@ -2,7 +2,8 @@
 
 ## Live Link
 
-
+##API
+https://eptome-parlor.herokuapp.com/
 
 ## End Points
 #### services
