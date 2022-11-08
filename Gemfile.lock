@@ -29,6 +29,8 @@ GEM
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    psych (4.0.6)
+      stringio
     rack (2.2.4)
     rack-contrib (2.3.0)
       rack (~> 2.0)
@@ -53,6 +55,7 @@ GEM
       activerecord (>= 4.1)
       sinatra (>= 1.0)
     sqlite3 (1.5.3-x86_64-linux)
+    stringio (3.0.2)
     thin (1.8.1)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -68,6 +71,7 @@ DEPENDENCIES
   activerecord
   pg
   pry
+  psych (~> 4.0.0)
   rack-contrib
   rack-cors
   rake

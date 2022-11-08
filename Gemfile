@@ -16,24 +16,21 @@ gem "rack-contrib"
 # https://github.com/cyu/rack-cors
 gem "rack-cors"
 
-# An object-relational mapper
-# https://guides.rubyonrails.org/active_record_basics.html
+#active-record download
 gem "activerecord"
 
-# Configures common Rake tasks for working with Active Record
-# https://github.com/sinatra-activerecord/sinatra-activerecord
+#sinatra download
 gem "sinatra-activerecord"
 
-# Run common tasks from the command line
-# https://github.com/ruby/rake
+#rake console n commands
 gem "rake"
 
-# Provides functionality to interact with a SQLite3 database
+gem 'psych', '~> 4.0.0'
 
-
-# Require all files in a folder
+#Require all files in a folder
 gem "require_all"
-# These gems will only be used when we are running the application locally
+
+#use pry in the development phase only
 group :development do
   gem "pry"
   gem "sqlite3"
@@ -42,16 +39,7 @@ group :development do
   # https://github.com/alexch/rerun
   gem "rerun"
 end
+
 group :production do
     gem "pg"
 end
-
-
-# # These gems will only be used when we are running tests
-# group :test do
-#   gem "database_cleaner", "~> 2.0"
-#   gem "rack-test", "~> 1.1"
-#   gem "rspec", "~> 3.10"
-#   gem "rspec-json_expectations", "~> 2.2"
-# end
-
