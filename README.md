@@ -23,7 +23,7 @@
 ```js
 - GET '/reviews'
 - GET '/reviews/:id'
-- POST '/reviews'
+- POST '/reviews/new'
 ```
 
 ### Bookings
