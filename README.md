@@ -28,7 +28,7 @@
 
 ### Bookings
 ```js
-- post '/bookings'
+- post '/bookings/new'
 ```
 ### Fetch Example
 
