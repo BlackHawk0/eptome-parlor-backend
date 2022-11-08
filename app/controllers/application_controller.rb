@@ -33,4 +33,23 @@ class ApplicationController < Sinatra::Base
      reviews.to_json
   end
 
+  # get service types
+  get '/service_types' do
+    ServiceType.all.to_json
+  end
+
+  # get specific service type
+  get '/service_types/:id' do
+    service_type = ServiceType.find(params[:id])
+
+    { service_type: service_type, services: service_type.services }.to_json
+  end
+
+  # get list of services for specific service type
+  get '/service_types/:id/services' do
+    service_type = ServiceType.find(params[:id])
+
+    result = Service.where(service_type_id: service_type.id).to_json
+  end
+
 end
