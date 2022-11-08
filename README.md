@@ -35,7 +35,7 @@
 
 
 ```js
-fetch("http://localhost:9292/test")
+fetch("http://localhost:9292/services")
   .then((r) => r.json())
   .then((data) => console.log(data));
 ```
