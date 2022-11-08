@@ -23,12 +23,12 @@
 ```js
 - GET '/reviews'
 - GET '/reviews/:id'
-- POST '/reviews'
+- POST '/reviews/new'
 ```
 
 ### Bookings
 ```js
-- post '/bookings'
+- post '/bookings/new'
 ```
 ### Fetch Example
 
