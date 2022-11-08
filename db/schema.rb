@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2022_11_08_041657) do
 
   create_table "bookings", force: :cascade do |t|
     t.string "customer_name"
-    t.integer "customer_phonenumber"
+    t.string "customer_phonenumber"
     t.string "customer_email"
     t.datetime "booked_date"
     t.integer "service_id"
