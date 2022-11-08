@@ -60,5 +60,56 @@ Service.create(service_name: "Massage Pregnancy", service_description: "Massage 
 Service.create(service_name: "Massage Reflexology", service_description: "Massage reflexology services", service_type_id: 4)
 Service.create(service_name: "Massage Aromatherapy", service_description: "Massage aromatherapy services", service_type_id: 4)
 Service.create(service_name: "Massage Shiatsu", service_description: "Massage shiatsu services", service_type_id: 4)
+Service.create(service_name: "Massage Thai", service_description: "Massage thai services", service_type_id: 4)
+
+Service.create(service_name: "Waxing", service_description: "Waxing services", service_type_id: 5)
+Service.create(service_name: "Waxing Eyebrows", service_description: "Waxing eyebrows services", service_type_id: 5)
+Service.create(service_name: "Waxing Lip", service_description: "Waxing lip services", service_type_id: 5)
+Service.create(service_name: "Waxing Chin", service_description: "Waxing chin services", service_type_id: 5)
+Service.create(service_name: "Waxing Underarm", service_description: "Waxing underarm services", service_type_id: 5)
+Service.create(service_name: "Waxing Bikini", service_description: "Waxing bikini services", service_type_id: 5)
+
+Service.create(service_name: "Tanning", service_description: "Tanning services", service_type_id: 6)
+Service.create(service_name: "Tanning Spray", service_description: "Tanning spray services", service_type_id: 6)
+Service.create(service_name: "Tanning Full Body", service_description: "Tanning full body services", service_type_id: 6)
+Service.create(service_name: "Tanning Half Body", service_description: "Tanning half body services", service_type_id: 6)
+
+Service.create(service_name: "Eyelash Extensions", service_description: "Eyelash extensions services", service_type_id: 7)
+Service.create(service_name: "Eyelash Extensions Removal", service_description: "Eyelash extensions removal services", service_type_id: 7)
+Service.create(service_name: "Eyelash Extensions Application", service_description: "Eyelash extensions application services", service_type_id: 7)
+Service.create(service_name: "Eyelash Extensions Touch Up", service_description: "Eyelash extensions touch up services", service_type_id: 7)
+
+Service.create(service_name: "Eyebrow Tinting", service_description: "Eyebrow tinting services", service_type_id: 8)
+Service.create(service_name: "Eyebrow Tinting Removal", service_description: "Eyebrow tinting removal services", service_type_id: 8)
+Service.create(service_name: "Eyebrow Tinting Application", service_description: "Eyebrow tinting application services", service_type_id: 8)
+Service.create(service_name: "Eyebrow Tinting Touch Up", service_description: "Eyebrow tinting touch up services", service_type_id: 8)
+
+Service.create(service_name: "Eyebrow Shaping", service_description: "Eyebrow shaping services", service_type_id: 9)
+Service.create(service_name: "Eyebrow Shaping Removal", service_description: "Eyebrow shaping removal services", service_type_id: 9)
+Service.create(service_name: "Eyebrow Shaping Application", service_description: "Eyebrow shaping application services", service_type_id: 9)
+Service.create(service_name: "Eyebrow Shaping Touch Up", service_description: "Eyebrow shaping touch up services", service_type_id: 9)
+
+Service.create(service_name: "Eyelash Perming", service_description: "Eyelash perming services", service_type_id: 10)
+Service.create(service_name: "Eyelash Perming Removal", service_description: "Eyelash perming removal services", service_type_id: 10)
+Service.create(service_name: "Eyelash Perming Application", service_description: "Eyelash perming application services", service_type_id: 10)
+Service.create(service_name: "Eyelash Perming Touch Up", service_description: "Eyelash perming touch up services", service_type_id: 10)
+
+Service.create(service_name: "Eyelash Lifting", service_description: "Eyelash lifting services", service_type_id: 11)
+Service.create(service_name: "Eyelash Lifting Removal", service_description: "Eyelash lifting removal services", service_type_id: 11)
+Service.create(service_name: "Eyelash Lifting Application", service_description: "Eyelash lifting application services", service_type_id: 11)
+Service.create(service_name: "Eyelash Lifting Touch Up", service_description: "Eyelash lifting touch up services", service_type_id: 11)
+
+Review.create(review_title: "great", review_description: "this review is great", review_rating: 5, service_id: 4)
+Review.create(review_title: "Good", review_description: "this review is good", review_rating: 4, service_id: 1)
+Review.create(review_title: "Average", review_description: "this review is average", review_rating: 3, service_id: 2)
+Review.create(review_title: "Fair", review_description: "this review is fair", review_rating: 2, service_id: 3)
+Review.create(review_title: "Poor", review_description: "this review is poor", review_rating: 1, service_id: 4)
+
+Booking.create(customer_name: "John Murphy", customer_phonenumber: '0425465493', customer_email: "john@gmail.com", booked_date: "2021-11-23 09:00:00", service_id: 1)
+Booking.create(customer_name: "Mary Hanks", customer_phonenumber: '0432546793', customer_email: "mary@gmail.com", booked_date: "2021-11-23 09:00:00", service_id: 1)
+Booking.create(customer_name: "Jerry Pierce", customer_phonenumber: '0432146578', customer_email: "jerry@gmail.com", booked_date: "2021-11-23 09:00:00", service_id: 2)
+Booking.create(customer_name: "Natalie Smith", customer_phonenumber: '0400012345', customer_email: "nat@gmail.com", booked_date: "2021-11-23 10:00:00", service_id: 2)
+Booking.create(customer_name: "Laura Holt", customer_phonenumber: '0400112343', customer_email: "laura@gmail.com", booked_date: "2021-11-23 10:00:00", service_id: 3)
+Booking.create(customer_name: "Janet King", customer_phonenumber: '0432113243', customer_email: "jk@gmail.com", booked_date: "2021-11-23 10:00:00", service_id: 3)
 
 puts "✅ Done seeding!"
