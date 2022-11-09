@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_09_075211) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_09_101354) do
   create_table "bookings", force: :cascade do |t|
     t.string "customer_name"
     t.string "customer_phonenumber"
@@ -40,6 +40,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_09_075211) do
     t.string "service_name"
     t.string "service_description"
     t.integer "service_type_id"
+  end
+
+  create_table "testimonials", force: :cascade do |t|
+    t.string "name"
+    t.string "imageURL"
+    t.text "message"
+    t.integer "rating"
   end
 
 end
