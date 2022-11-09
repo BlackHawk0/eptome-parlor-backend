@@ -51,19 +51,6 @@ class ApplicationController < Sinatra::Base
     result = Service.where(service_type_id: service_type.id).to_json
   end
 
-    #get all service types and nested services
-   get '/all' do
-    service_types = ServiceType.all
-    result = service_types.map do |service_type|
-      {
-        service_type: service_type,
-        services: service_type.services.all
-      }
-    end
-
-    result.to_json
-  end
-
   # get reviews
   get '/reviews' do
     Review.all.to_json
