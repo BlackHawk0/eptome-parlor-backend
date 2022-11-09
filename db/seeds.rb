@@ -112,4 +112,13 @@ Booking.create(customer_name: "Natalie Smith", customer_phonenumber: '0400012345
 Booking.create(customer_name: "Laura Holt", customer_phonenumber: '0400112343', customer_email: "laura@gmail.com", booked_date: "2021-11-23 10:00:00", service_id: 3)
 Booking.create(customer_name: "Janet King", customer_phonenumber: '0432113243', customer_email: "jk@gmail.com", booked_date: "2021-11-23 10:00:00", service_id: 3)
 
+#Testimonials
+
+Testimonial.create(name: "Bob", imageURL: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", message: "Worked miracles.", rating: 5)
+Testimonial.create(name: "Carl", imageURL: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", message: "Worked miracles.", rating: 4)
+Testimonial.create(name: "Dave", imageURL: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", message: "Worked miracles.", rating: 3)
+Testimonial.create(name: "Elizabeth ", imageURL: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", message: "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.", rating: 5)
+Testimonial.create(name: "Finn", imageURL: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", message: "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.", rating: 4)
+Testimonial.create(name: "George", imageURL: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", message: "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.", rating: 3)
+
 puts "✅ Done seeding!"
