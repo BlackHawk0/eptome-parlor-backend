@@ -48,7 +48,6 @@ class ApplicationController < Sinatra::Base
   # get list of services for specific service type
   get '/service_types/:id/services' do
     service_type = ServiceType.find(params[:id])
-
     result = Service.where(service_type_id: service_type.id).to_json
   end
 
