@@ -85,4 +85,9 @@ class ApplicationController < Sinatra::Base
       { message: "Booking not created", errors: booking.errors.full_messages }.to_json
     end
   end
+
+  # get testimonials
+  get '/testimonials' do
+    Testimonial.all.to_json
+  end
 end
