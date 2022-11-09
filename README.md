@@ -31,6 +31,10 @@ https://eptome-parlor.herokuapp.com/
 ```js
 - post '/bookings/new'
 ```
+### Bookings
+```js
+- post '/testimonials'
+```
 ### Fetch Example
 
 
