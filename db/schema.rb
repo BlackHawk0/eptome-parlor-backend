@@ -10,15 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_09_101354) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_10_150529) do
   create_table "bookings", force: :cascade do |t|
     t.string "customer_name"
     t.string "customer_phonenumber"
     t.string "customer_email"
     t.datetime "booked_date", precision: nil
     t.integer "service_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -26,8 +24,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_09_101354) do
     t.string "review_description"
     t.integer "review_rating"
     t.integer "service_id"
-    t.integer "upvotes", default: 0
-    t.integer "downvotes", default: 0
   end
 
   create_table "service_types", force: :cascade do |t|
@@ -40,6 +36,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_09_101354) do
     t.string "service_name"
     t.string "service_description"
     t.integer "service_type_id"
+    t.string "imageURL"
   end
 
   create_table "testimonials", force: :cascade do |t|
