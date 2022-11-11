@@ -18,14 +18,6 @@ class ApplicationController < Sinatra::Base
     { service: service, service_type: service.service_type, reviews: service.reviews }.to_json
   end
 
-
-  #get list of bookings for specific service
-  get '/services/:id/bookings' do
-    service = Service.find(params[:id])
-
-    result = Booking.where(service_id: service.id).to_json
-  end
-
   #get list of reviews for specific service
   get '/services/:id/reviews' do
      service_id = params[:id]

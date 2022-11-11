@@ -15,8 +15,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_10_150529) do
     t.string "customer_name"
     t.string "customer_phonenumber"
     t.string "customer_email"
+    t.string "booked_service"
     t.datetime "booked_date", precision: nil
-    t.integer "service_id"
   end
 
   create_table "reviews", force: :cascade do |t|
