@@ -21,13 +21,6 @@ Review.create(review_title: "Average", review_description: "this review is avera
 Review.create(review_title: "Fair", review_description: "this review is fair", review_rating: 2, service_id: 3)
 Review.create(review_title: "Poor", review_description: "this review is poor", review_rating: 1, service_id: 4)
 
-Booking.create(customer_name: "John Murphy", customer_phonenumber: '0425465493', customer_email: "john@gmail.com", booked_date: "2021-11-23 09:00:00", service_id: 1)
-Booking.create(customer_name: "Mary Hanks", customer_phonenumber: '0432546793', customer_email: "mary@gmail.com", booked_date: "2021-11-23 09:00:00", service_id: 1)
-Booking.create(customer_name: "Jerry Pierce", customer_phonenumber: '0432146578', customer_email: "jerry@gmail.com", booked_date: "2021-11-23 09:00:00", service_id: 2)
-Booking.create(customer_name: "Natalie Smith", customer_phonenumber: '0400012345', customer_email: "nat@gmail.com", booked_date: "2021-11-23 10:00:00", service_id: 2)
-Booking.create(customer_name: "Laura Holt", customer_phonenumber: '0400112343', customer_email: "laura@gmail.com", booked_date: "2021-11-23 10:00:00", service_id: 3)
-Booking.create(customer_name: "Janet King", customer_phonenumber: '0432113243', customer_email: "jk@gmail.com", booked_date: "2021-11-23 10:00:00", service_id: 3)
-
 #Testimonials
 
 Testimonial.create(name: "Bob", imageURL: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", message: "Worked miracles.", rating: 5)
