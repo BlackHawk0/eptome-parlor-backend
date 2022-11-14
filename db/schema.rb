@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_10_150529) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_14_100506) do
   create_table "bookings", force: :cascade do |t|
     t.string "customer_name"
     t.string "customer_phonenumber"
@@ -30,6 +30,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_10_150529) do
     t.string "service_type_name"
     t.string "service_type_description"
     t.string "imageURL"
+    t.integer "prize", default: 0
   end
 
   create_table "services", force: :cascade do |t|
@@ -44,6 +45,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_10_150529) do
     t.string "imageURL"
     t.text "message"
     t.integer "rating"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password"
   end
 
 end

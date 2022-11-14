@@ -65,6 +65,10 @@ class ApplicationController < Sinatra::Base
       { message: "Review not created", errors: review.errors.full_messages }.to_json
     end
   end
+  # get bookings
+  get '/bookings' do 
+    Booking.all.to_json
+  end
 
   # create a booking
   post '/bookings/new' do
@@ -75,6 +79,20 @@ class ApplicationController < Sinatra::Base
     else
       { message: "Booking not created", errors: booking.errors.full_messages }.to_json
     end
+  end
+
+  #update a booking
+  patch '/bookings/:id' do
+    booking = Booking.find(params[:id])
+    booking.update(params)
+    booking.to_json
+  end
+
+  #delete a booking
+  delete '/bookings/:id' do
+    booking = Booking.find(params[:id])
+    booking.destroy
+    { message: "Booking successfully deleted" }.to_json
   end
 
   # get testimonials
